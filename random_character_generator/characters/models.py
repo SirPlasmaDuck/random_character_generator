@@ -3,19 +3,19 @@ from django.db import models
 class Character(models.Model):
     # Classes
     CLASS_CHOICES = [
-        ('Artificer', 'Artificer'),
-        ('Barbarian', 'Barbarian'),
-        ('Bard', 'Bard'),
-        ('Cleric', 'Cleric'),
-        ('Druid', 'Druid'),
-        ('Fighter', 'Fighter'),
-        ('Monk', 'Monk'),
-        ('Paladin', 'Paladin'),
-        ('Ranger', 'Ranger'),
-        ('Rogue', 'Rogue'),
-        ('Sorcerer', 'Sorcerer'),
-        ('Warlock', 'Warlock'),
-        ('Wizard', 'Wizard'),
+        ('Artificer', 'artificer'),
+        ('Barbarian', 'barbarian'),
+        ('Bard', 'bard'),
+        ('Cleric', 'cleric'),
+        ('Druid', 'druid'),
+        ('Fighter', 'fighter'),
+        ('Monk', 'monk'),
+        ('Paladin', 'paladin'),
+        ('Ranger', 'ranger'),
+        ('Rogue', 'rogue'),
+        ('Sorcerer', 'sorcerer'),
+        ('Warlock', 'warlock'),
+        ('Wizard', 'wizard'),
     ]
 
     # Races
