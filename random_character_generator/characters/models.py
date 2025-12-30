@@ -3,32 +3,32 @@ from django.db import models
 class Character(models.Model):
     # Classes
     CLASS_CHOICES = [
-        ('artificer', 'Artificer'),
-        ('barbarian', 'Barbarian'),
-        ('bard', 'Bard'),
-        ('cleric', 'Cleric'),
-        ('druid', 'Druid'),
-        ('fighter', 'Fighter'),
-        ('monk', 'Monk'),
-        ('paladin', 'Paladin'),
-        ('ranger', 'Ranger'),
-        ('rogue', 'Rogue'),
-        ('sorcerer', 'Sorcerer'),
-        ('warlock', 'Warlock'),
-        ('wizard', 'Wizard'),
+        ('Artificer', 'Artificer'),
+        ('Barbarian', 'Barbarian'),
+        ('Bard', 'Bard'),
+        ('Cleric', 'Cleric'),
+        ('Druid', 'Druid'),
+        ('Fighter', 'Fighter'),
+        ('Monk', 'Monk'),
+        ('Paladin', 'Paladin'),
+        ('Ranger', 'Ranger'),
+        ('Rogue', 'Rogue'),
+        ('Sorcerer', 'Sorcerer'),
+        ('Warlock', 'Warlock'),
+        ('Wizard', 'Wizard'),
     ]
 
     # Races
     RACE_CHOICES = [
-        ('dragonborn', 'Dragonborn'),
-        ('dwarf', 'Dwarf'),
-        ('elf', 'Elf'),
-        ('gnome', 'Gnome'),
-        ('half-elf', 'Half-Elf'),
-        ('half-orc', 'Half-Orc'),
-        ('human', 'Human'),
-        ('orc', 'Orc'),
-        ('tiefling', "Tiefling")
+        ('Dragonborn', 'Dragonborn'),
+        ('Dwarf', 'Dwarf'),
+        ('Elf', 'Elf'),
+        ('Gnome', 'Gnome'),
+        ('Half-Elf', 'Half-Elf'),
+        ('Half-Orc', 'Half-Orc'),
+        ('Human', 'Human'),
+        ('Orc', 'Orc'),
+        ('Tiefling', "Tiefling")
     ]
     # Basic Information
     name = models.CharField(max_length=50)
