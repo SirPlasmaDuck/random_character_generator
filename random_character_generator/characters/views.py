@@ -77,3 +77,7 @@ def save_character(request):
             charisma = request.POST['charisma'],
         )
     return redirect('home')
+
+def character_archive(request):
+    characters = Character.objects.all()
+    return render(request, 'characters/character_archive.html', {'characters': characters})
