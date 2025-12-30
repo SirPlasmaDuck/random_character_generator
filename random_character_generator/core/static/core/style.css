@@ -13,7 +13,7 @@ body {
 
 .character-card {
     background-color: #1e293b;
-    padding: 1px 30px 20px 30px;
+    padding: 10px 20px;
     margin: 20px auto;
     border-radius: 12px;
     text-align: left;
@@ -36,6 +36,45 @@ body {
 
 .right-buttons {
     display: flex;
+}
+
+.card-body{
+    display: none;
+    margin-top: 10px;
+}
+
+.character-card.open .card-body {
+    display: block;
+}
+
+.card-header{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1e293b;
+    padding: 10px 20px;
+    border-radius: 12px 12px 0 0;
+    color: #e5e7eb;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 10px auto 0 auto;
+    max-width: 750px;
+}
+
+.card-header:hover {
+     background-color: #334155;
+}
+
+.arrow {
+    transition: transform 0.3s;
+}
+
+.character-card.open .arrow {
+    transform: rotate(180deg);
+}
+
+.character-card.open .card-body {
+    display: block;
 }
 h1 {
     font-size: 3rem;
@@ -60,4 +99,11 @@ p {
 
 .btn:hover {
     background-color: #4f46e5;
+}
+
+.button {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
